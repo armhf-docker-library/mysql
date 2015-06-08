@@ -29,7 +29,7 @@ RUN { \
 RUN sed -Ei 's/^(bind-address|log)/#&/' /etc/mysql/my.cnf
 
 VOLUME /var/lib/mysql
-ENV swag yolo
+
 COPY docker-entrypoint.sh /entrypoint.sh
 ENTRYPOINT ["/entrypoint.sh"]
 
